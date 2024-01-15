@@ -8,16 +8,16 @@ public class switch_case
     {
         Scanner keyboard = new Scanner(System.in);
         out.println("Почему эл стоит под дождём? ");
-        int numb = keyboard.nextInt();
-        switch(numb)
+        String word = keyboard.next();
+        switch(word)
         {
-            case 1:
+            case "один":
                 out.println("Потому что дождь идёт долго");
                 break;
-            case 2:
+            case "два":
                 out.println("Потому что он очень расстроен");
                 break;
-            case 3:
+            case "три":
                 out.println("Потому что он всё равно уже мокрый");
                 break;
             default:
