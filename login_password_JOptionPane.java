@@ -11,7 +11,10 @@ public class login_password_JOptionPane
         // int secondPassword = Integer.parseInt(JOptionPane.showInputDialog("Настоящий числовой пароль: ")); // Ввод числового пароля
         // double thirdPassword = Double.parseDouble(JOptionPane.showInputDialog("Введите дробный пароль: ")); // Ввод дробного пароля
 
-        if  (username != null && password != null &&
+        if  (username == null || password == null) {
+            JOptionPane.showMessageDialog(null, "Недостаточно информации");
+        }
+        else if (username != null && password != null &&
                 (
                     ((username.equals("anakluo") || username.equals("ANAKLUO"))) && password.equals("anakluo") ||
                     ((username.equals("danya") || username.equals("DANYA")) && password.equals("danya"))
