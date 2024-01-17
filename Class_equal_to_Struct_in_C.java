@@ -7,7 +7,7 @@ class account
     int balance;
 }
 
-public class Класс_равно_структура
+public class Class_equal_to_Struct_in_C
 {
     public static void main(String[] args)
     {
