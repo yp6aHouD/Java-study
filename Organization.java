@@ -22,8 +22,8 @@ public class Organization
 
     public void print_data()
     {
-        out.println("Name of organization: " + name);
-        out.println("Year income of organization: " + year_income);
+        out.println("\nName of organization: " + name);
+        out.printf("Year income: $%.2f\n", year_income);
         out.println("Is organization commercial: " + is_commercial);
     }
 

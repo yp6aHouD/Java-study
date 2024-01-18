@@ -11,21 +11,19 @@ public class use_Organization
 
         first.input_data(keyboard);
         first.print_data();
-        out.print("Additional Income: $");
-        out.print(first.getInterest(5.00) + ".");
         out.println();
-        out.print("Taxes: $");
-        out.print(first.getTaxes() + ".");
+        out.print("Additional Income: ");
+        out.printf("$%.2f\n", first.getInterest(5.00));
+        out.printf("Taxes: $%.2f\n", first.getTaxes());
         out.println();
 
 
         second.input_data(keyboard);
         second.print_data();
-        out.print("Additional Income: $");
-        out.print(second.getInterest(5.00) + ".");
         out.println();
-        out.print("Taxes: $");
-        out.print(second.getTaxes() + ".");
+        out.print("Additional Income: ");
+        out.printf("$%.2f\n", second.getInterest(5.00));
+        out.printf("Taxes: $%.2f\n", second.getTaxes());
         out.println();
         
 
