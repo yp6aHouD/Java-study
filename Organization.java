@@ -7,16 +7,17 @@ public class Organization
     double year_income;
     boolean is_commercial;
 
-    public void input_data()
+    public void input_data(Scanner input)
     {
-        Scanner keyboard = new Scanner(System.in);
-        out.print("Enter name of organization: ");
-        name = keyboard.next();
+        out.println();
+        out.print("Enter name of organization: "); 
+        name = input.next();
+
         out.print("Enter year income of organization: ");
-        year_income = keyboard.nextDouble();
+        year_income = input.nextDouble();
+
         out.print("Enter is organization commercial (true/false): ");
-        is_commercial = keyboard.nextBoolean();
-        keyboard.close();
+        is_commercial = input.nextBoolean();
     }
 
     public void print_data()
@@ -25,11 +26,15 @@ public class Organization
         out.println("Year income of organization: " + year_income);
         out.println("Is organization commercial: " + is_commercial);
     }
-    
-    public void createOrganization()
+
+    public double getInterest(double percentageRate)
     {
-        Organization first = new Organization();
-        first.input_data();
-        first.print_data();
+        return year_income * percentageRate / 100;
+    }
+
+    public double getTaxes()
+    {
+        if (is_commercial) return year_income * 0.1;
+        else return year_income * 0.02;
     }
 }
