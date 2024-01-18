@@ -6,5 +6,8 @@
 	"prettier.jsxSingleQuote": true,
 	"prettier.singleQuote": true,
 	"prettier.arrowParens": "avoid",
-	"cSpell.language": "en,ru"
+	"cSpell.language": "en,ru",
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	}
 }

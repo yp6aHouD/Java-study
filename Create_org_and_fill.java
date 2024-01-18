@@ -1,7 +1,7 @@
 import static java.lang.System.out;
 import java.util.Scanner;
 
-public class First
+public class Create_org_and_fill
 {
     private static class Organization
     {
