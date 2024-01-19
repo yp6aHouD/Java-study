@@ -28,7 +28,7 @@ class second // внешний класс
 {
     public String name;         // стандартная, может использоваться везде
     protected String address;   // защищенный доступ
-    private int balance;        // не может использоваться другими классами, 
+    /*private*/ int balance;        // не может использоваться другими классами, 
                                // а только внутри класса.
     double factorial(int n)
     {

@@ -3,20 +3,46 @@ import java.util.Scanner;
 
 public class Organization
 {
-    String name;
-    double year_income;
-    boolean is_commercial;
+    private String name;
+    private double year_income;
+    private boolean is_commercial;
 
     public void input_data(Scanner input)
     {
         out.println();
-        out.print("Enter name of organization: "); 
-        name = input.next();
+        out.print("Enter name of organization: ");
+ 
+        if (input.hasNext()){
+            name = input.next();
+        }
 
         out.print("Enter year income of organization: ");
+
+        while (!input.hasNextDouble())
+        {
+            out.print("Wrong input, put again: ");
+            input.next(); // очищаем неверный ввод
+        }
         year_income = input.nextDouble();
 
+        while (year_income < 0)
+        {
+            out.print("Wrong input, put again: ");
+            while (!input.hasNextDouble())
+            {
+                out.print("Wrong input, put again: ");
+                input.next(); // очищаем неверный ввод
+            }
+            year_income = input.nextDouble();
+        }
+
         out.print("Enter is organization commercial (true/false): ");
+
+        while (!input.hasNextBoolean())
+        {
+            out.print("Wrong input, put again: ");
+            input.next(); // очищаем неверный ввод
+        }
         is_commercial = input.nextBoolean();
     }
 
