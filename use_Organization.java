@@ -25,7 +25,7 @@ public class use_Organization
         out.printf("$%.2f\n", second.getInterest(5.00));
         out.printf("Taxes: $%.2f\n", second.getTaxes());
         out.println();
-        
+
 
         keyboard.close();
     }

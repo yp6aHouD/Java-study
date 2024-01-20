@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-class account // классы (структуры) необязательно объявлять перед мейн классом!
+class account // классы (структуры) необязательно объявлять перед main классом!
 {
     String name;
     String address;
