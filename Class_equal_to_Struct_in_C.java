@@ -11,8 +11,9 @@ public class Class_equal_to_Struct_in_C
 {
     public static void main(String[] args)
     {
+        
         account mine = new account();
-
+        
         do
         {
             mine.name = JOptionPane.showInputDialog("Введите своё имя:");
