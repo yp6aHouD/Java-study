@@ -7,7 +7,7 @@ class account // классы (структуры) необязательно о
     int balance;
 }
 
-public class Class_equal_to_Struct_in_C
+public class Class_is_a_struct
 {
     public static void main(String[] args)
     {
