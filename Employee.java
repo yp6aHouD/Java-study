@@ -1,4 +1,6 @@
 import static java.lang.System.out;
+import java.util.Locale;
+import java.util.Formatter;
 
 public class Employee
 {
@@ -27,8 +29,9 @@ public class Employee
 
     public void cutCheck(double amountPaid)
     {
+        Locale.setDefault(Locale.CHINA);
         out.printf("Pay to the employee %s ", name);
         out.printf("(%s) ", jobTitle);
-        out.printf("%,.2f\n", amountPaid);
+        out.print(new java.util.Formatter().format(java.util.Locale.CHINA, "%.2f\n", amountPaid));
     }
 }
