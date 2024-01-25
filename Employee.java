@@ -1,6 +1,5 @@
 import static java.lang.System.out;
 import java.util.Locale;
-import java.util.Formatter;
 
 public class Employee
 {

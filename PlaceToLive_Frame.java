@@ -40,28 +40,28 @@ public class PlaceToLive_Frame
         if (inputAddress.equals(first.getCity()))
         {
             return  "Address: " + first.getAddress() +
-                    " Number of rooms: " + first.getRooms() + 
-                    " Total Area: " + first.getArea() + 
-                    " Price for one room: " + first.getRoomPrice() +
-                    " Price for 1 square meter: " + first.getAreaPrice();
+                    ", Number of rooms: " + first.getRooms() + 
+                    ", Total Area: " + first.getArea() + 
+                    ", Price for one room: " + first.getRoomPrice() +
+                    ", Price for 1 square meter: " + first.getAreaPrice();
         }
 
         else if (inputAddress.equals(second.getCity()))
         {
-            return  " Address: " + second.getAddress() +
-                    " Number of rooms: " + second.getRooms() +
-                    " Total Area: " + second.getArea() +
-                    " Price for one room: " + second.getRoomPrice() +
-                    " Price for 1 square meter: " + second.getAreaPrice();
+            return  "Address: " + second.getAddress() +
+                    ", Number of rooms: " + second.getRooms() +
+                    ", Total Area: " + second.getArea() +
+                    ", Price for one room: " + second.getRoomPrice() +
+                    ", Price for 1 square meter: " + second.getAreaPrice();
         }
 
         else if (inputAddress.equals(third.getCity())) 
         {
             return  "Address: " + third.getAddress() +
-                    " Number of rooms: " + third.getRooms() +
-                    " Total Area: " + third.getArea() +
-                    " Price for one room: " + third.getRoomPrice() +
-                    " Price for 1 square meter: " + third.getAreaPrice();
+                    ", Number of rooms: " + third.getRooms() +
+                    ", Total Area: " + third.getArea() +
+                    ", Price for one room: " + third.getRoomPrice() +
+                    ", Price for 1 square meter: " + third.getAreaPrice();
         }
 
         else
