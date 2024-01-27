@@ -31,6 +31,6 @@ public class Employee
         Locale.setDefault(Locale.CHINA);
         out.printf("Pay to the employee %s ", name);
         out.printf("(%s) ", jobTitle);
-        out.print(new java.util.Formatter().format(java.util.Locale.CHINA, "%.2f\n", amountPaid));
+        out.print(new java.util.Formatter().format(java.util.Locale.CHINA, "$%.2f\n", amountPaid));
     }
 }

@@ -33,6 +33,7 @@ public class Class_is_a_struct
             {
                 mine.balance = Integer.parseInt(balanceInput);
             }
+            
         }
         while (mine.balance == 0);
         
