@@ -30,6 +30,8 @@ public class DisplayThePlaces
         setPrice(second, keyboard);
         setPrice(third, keyboard);
         
+        
+
         printInfo(first);
         printInfo(second);
         printInfo(third);
