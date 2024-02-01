@@ -12,11 +12,12 @@ public class DoPayroll
 
         for (int empNum = 1; empNum <= 3; empNum++)
         {
-            payOneEmployee(diskScanner);
+            payOneEmployee(diskScanner); // чтение с диска
         }
 
         payFullTimeEmployee();
         payPartTimeEmployee();
+        payPartTimeWithOver();
 
         diskScanner.close();
     }
@@ -49,6 +50,15 @@ public class DoPayroll
         ptEmployee.setJobTitle("Scientist");
         ptEmployee.setHourlyRate(200);
         ptEmployee.cutCheck(ptEmployee.findPaymentAmount(40));
+    }
+
+    static void payPartTimeWithOver()
+    {
+        PartTimeWithOver ptoEmployee = new PartTimeWithOver();
+        ptoEmployee.setName("Andre");
+        ptoEmployee.setJobTitle("Reader");
+        ptoEmployee.setHourlyRate(200);
+        ptoEmployee.cutCheck(ptoEmployee.findPaymentAmount(50));
     }
     
 }

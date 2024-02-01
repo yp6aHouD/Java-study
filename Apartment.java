@@ -11,4 +11,14 @@ public class Apartment extends PlaceToLive
     {
         return rent_cost;
     }
+
+    public double getAreaPrice()
+    {
+        return getRentCost() / getArea();
+    }
+    
+    public double get1RoomPrice()
+    {
+        return getRentCost() / getRooms();
+    }
 }

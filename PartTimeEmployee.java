@@ -1,4 +1,4 @@
-
+// расширение стандартного класса
 
 
 public class PartTimeEmployee extends Employee

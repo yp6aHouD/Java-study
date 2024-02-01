@@ -24,5 +24,15 @@ public class House extends PlaceToLive
     {
         return year_tax;
     }
+
+    public double get1RoomPrice()
+    {
+        return getRoomPrice() + getLoanPrice() / 12 + getYearTax() / 12;
+    }
+
+    public double get1SquareMeterPrice()
+    {
+        return getAreaPrice() + (getLoanPrice() / 12 + getYearTax() / 12) / getArea();
+    }
 }
 

@@ -11,6 +11,7 @@ public class DisplayThePlaces2
         Locale.setDefault(Locale.CHINA);
         House hse = new House();
         Apartment apt = new Apartment();
+        ApartmentWithFees aptf = new ApartmentWithFees();
 
         hse.setAddress("ChengDu, DianZiKeDa");
         hse.setCity("Chengdu");
@@ -27,8 +28,17 @@ public class DisplayThePlaces2
         apt.setCost(57780.5);
         apt.setRentCost(3250);
 
+        aptf.setAddress("GuangZhou, GuangDongDaXue");
+        aptf.setCity("GuangZhou");
+        aptf.setRooms(3);
+        aptf.setArea(43.5);
+        aptf.setRentCost(3250);
+        aptf.setFee(300);
+
+
         printHseInfo(hse);
         printApsInfo(apt);
+        printAptfInfo(aptf);
     }
 
     static void printHseInfo(House place)
@@ -36,17 +46,28 @@ public class DisplayThePlaces2
         out.println("\nAddress: " + place.getAddress());
         out.println("Number of rooms: " + place.getRooms());
         out.println("Total area: " + place.getArea());
-        out.printf("Monthly price for one room: %.2f\n", (place.getRoomPrice() + place.getLoanPrice() / 12 + place.getYearTax() / 12));
-        out.printf("Price for 1 square meter: %.2f\n", (place.getAreaPrice() + (place.getLoanPrice() / 12 + place.getYearTax() / 12) / place.getArea()));
+        out.printf("Monthly price for one room: %.2f\n", (place.get1RoomPrice()));
+        out.printf("Price for 1 square meter: %.2f\n", (place.get1SquareMeterPrice()));
     }
 
-    static void printApsInfo(Apartment place)
+    static void printApsInfo(Apartment place) // без налога
     {
         out.println("\nAddress: " + place.getAddress());
         out.println("Number of rooms: " + place.getRooms());
         out.println("Total area: " + place.getArea());
-        out.printf("Monthly price for one room: %.2f\n", place.getRentCost());
-        out.printf("Price for 1 square meter: %.2f\n", (place.getRentCost() / place.getArea()));
+        out.printf("Total price per month: %.2f\n", place.getRentCost());
+        out.printf("Monthly price for one room: %.2f\n", place.get1RoomPrice());
+        out.printf("Price for 1 square meter: %.2f\n", (place.getAreaPrice()));
+    }
+
+    static void printAptfInfo(ApartmentWithFees place) // с налогом
+    {
+        out.println("\nAddress: " + place.getAddress());
+        out.println("Number of rooms: " + place.getRooms());
+        out.println("Total area: " + place.getArea());
+        out.printf("Total price per month: %.2f\n", place.getRentCost());
+        out.printf("Monthly price for one room: %.2f\n", place.get1RoomPrice());
+        out.printf("Price for 1 square meter: %.2f\n", (place.getAreaPrice()));
     }
 
     static void setPrice(PlaceToLive place, Scanner in)
