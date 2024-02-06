@@ -22,7 +22,6 @@ public class DoPayroll
         diskScanner.close();
     }
     
-
     static void payOneEmployee(Scanner aScanner)
     {
         Employee anEmployee = new Employee();
@@ -33,6 +32,7 @@ public class DoPayroll
         
         aScanner.nextLine();
     }
+
     static void payFullTimeEmployee()
     {
         FullTimeEmployee ftEmployee = new FullTimeEmployee();
