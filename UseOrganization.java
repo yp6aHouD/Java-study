@@ -1,7 +1,7 @@
 import static java.lang.System.out;
 import java.util.Scanner;
 
-public class use_Organization
+public class UseOrganization
 {
     public static void main(String[] args)
     {

@@ -1,6 +1,6 @@
 import static java.lang.System.out;
 
-public class use_Account
+public class UseAccount
 {
     public static void main(String args[])
     {

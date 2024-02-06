@@ -1,6 +1,6 @@
 import com.allmycode.dummiesframe.DummiesFrame;
 
-public class use_dummies_frame
+public class UseDummiesFrame
 {
     public static void main(String[] args)
     {
