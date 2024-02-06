@@ -5,7 +5,7 @@ public class UseTemperature
     public static void main(String[] args)
     {
         final String format = "%5.2f градусов по %s\n"; // заготовка для использования в printf
-
+    
         Temperature temp = new Temperature();
         temp.setNumber(33.5);
         temp.setScale(Temperature.TempScale.CELSIUS);
