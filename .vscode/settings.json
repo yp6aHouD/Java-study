@@ -8,4 +8,8 @@
   "prettier.arrowParens": "avoid",
   "cSpell.language": "en,ru",
   "java.format.settings.url": "~/.vscode/eclipse-java-google-style.xml",
+  "cSpell.words": [
+    "суперкласс",
+    "суперкласса"
+  ],
 }

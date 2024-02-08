@@ -19,5 +19,19 @@ public class UseTemperature
 
         temp = new Temperature(-273.0, Temperature.TempScale.KELVIN);
         out.printf(format, temp.getNumber(), temp.getScale());
-    }    
+
+        out.println();
+        
+        TemperatureNice temp2 = new TemperatureNice(); // создание объекта в подклассе
+        temp2.display();                               // с определенным методом display
+
+        temp2 = new TemperatureNice(33.0);
+        temp2.display();
+
+        temp2 = new TemperatureNice(TemperatureNice.TempScale.KELVIN);
+        temp2.display();
+
+        temp2 = new TemperatureNice(24.5, TemperatureNice.TempScale.CELSIUS);
+        temp2.display();
+    }   
 }
