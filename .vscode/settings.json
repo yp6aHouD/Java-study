@@ -13,4 +13,7 @@
     "суперкласса",
     "nums"
   ],
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
 }
