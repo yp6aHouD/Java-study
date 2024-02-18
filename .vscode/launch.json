@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeetCode_1TwoSum",
+            "request": "launch",
+            "mainClass": "LeetCode_1TwoSum",
+            "projectName": "Java_fcbfd1b6"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -23,7 +30,9 @@
             "request": "launch",
             "mainClass": "DoPayroll",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -31,7 +40,9 @@
             "request": "launch",
             "mainClass": "Fibonacci_recursive",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -39,7 +50,9 @@
             "request": "launch",
             "mainClass": "Guess_game",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -47,7 +60,9 @@
             "request": "launch",
             "mainClass": "Guess_game_while",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"],
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -55,7 +70,9 @@
             "request": "launch",
             "mainClass": "Main_file",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -63,7 +80,9 @@
             "request": "launch",
             "mainClass": "Months_days_switch",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -71,7 +90,9 @@
             "request": "launch",
             "mainClass": "Password_input",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
@@ -79,7 +100,9 @@
             "request": "launch",
             "mainClass": "calc_dummies_frame",
             "projectName": "Java_fcbfd1b6",
-            "args": ["-Duser.language=cn -Duser.country=CN"]
+            "args": [
+                "-Duser.language=cn -Duser.country=CN"
+            ]
         },
         {
             "type": "java",
