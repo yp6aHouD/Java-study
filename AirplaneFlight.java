@@ -83,8 +83,8 @@ public class AirplaneFlight
 
     public void PrintFlightInfo()
     {
-        final String example = "Flight number: %d\nDeparture airport: %s\n" + 
-            "Departure time: %s\nArrival airport: %s\nArrival time: %s\n\n";
+        final String example = "\nFlight number: %d\nDeparture airport: %s\n" + 
+            "Departure time: %s\nArrival airport: %s\nArrival time: %s\n";
         out.printf(example, getPlaneNumber(), getDepartureAirport(), getDepartureTime(),
             getArrivalAirport(), getArrivalTime());
     }
