@@ -7,13 +7,9 @@
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
   "cSpell.language": "en,ru",
-  "java.format.settings.url": "~/.vscode/eclipse-java-google-style.xml",
-  "cSpell.words": [
-    "суперкласс",
-    "суперкласса",
-    "nums"
-  ],
+  "java.format.settings.url": "/Users/yp6ahoud/projects/Java/.vscode/eclipse-java-google-style.xml",
+  "cSpell.words": ["суперкласс", "суперкласса", "nums"],
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
-  },
+  }
 }
