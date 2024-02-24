@@ -25,7 +25,6 @@ import javax.swing.event.DocumentListener;
 
 public class DummiesFrame extends JFrame
     implements ActionListener {
-
   private static final long serialVersionUID = 1L;
 
   private final int MAX_ROWS = 10;
@@ -251,14 +250,17 @@ public class DummiesFrame extends JFrame
 
   void validateInput(int whichRow) {
     String text = textField[whichRow].getText();
-
+    
     try {
       if (types[whichRow] == int.class
           || types[whichRow] == Integer.class) {
+        @SuppressWarnings("unused")
         int x = Integer.valueOf(text);
+        
       }
       if (types[whichRow] == double.class
           || types[whichRow] == Double.class) {
+        @SuppressWarnings("unused")
         double x = Double.valueOf(text);
       }
       if (types[whichRow] == char.class
@@ -276,18 +278,22 @@ public class DummiesFrame extends JFrame
       }
       if (types[whichRow] == short.class
           || types[whichRow] == Short.class) {
+        @SuppressWarnings("unused")
         short x = Short.valueOf(text);
       }
       if (types[whichRow] == long.class
           || types[whichRow] == Long.class) {
+        @SuppressWarnings("unused")
         long x = Long.valueOf(text);
       }
       if (types[whichRow] == byte.class
           || types[whichRow] == Byte.class) {
+        @SuppressWarnings("unused")
         byte x = Byte.valueOf(text);
       }
       if (types[whichRow] == float.class
           || types[whichRow] == Float.class) {
+        @SuppressWarnings("unused")
         float x = Float.valueOf(text);
       }
 

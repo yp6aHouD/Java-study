@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class SimpleHTTPServer
 {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception
     {
         final ServerSocket server = new ServerSocket(8080);
