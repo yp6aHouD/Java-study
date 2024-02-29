@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import java.awt.GridLayout;
 
 @SuppressWarnings("serial")
-public class TeamFrame extends JFrame 
+public class TeamFrame extends JFrame
 {
     public TeamFrame() throws IOException
     {
