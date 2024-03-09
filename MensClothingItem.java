@@ -1,4 +1,4 @@
-
+import java.util.Objects;
 
 enum clothesType
 {
@@ -34,11 +34,11 @@ public class MensClothingItem
 
     public clothesType getType()
     {
-        return kind;
+        return Objects.requireNonNull(kind);
     }
 
     public String getName()
     {
-        return name;
+        return Objects.requireNonNull(name);
     }
 }

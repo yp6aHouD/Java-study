@@ -8,20 +8,29 @@ import java.awt.GridLayout;
 @SuppressWarnings("serial")
 public class TeamFrame extends JFrame
 {
-    public TeamFrame() throws IOException
+    public TeamFrame() throws IOException // Выбрасываем исключения в консоль
     {
-        BaseballPlayer player;
+        PlayerPlus player;
         Scanner hankeesData = new Scanner(new File("Hankees.txt"));
 
+        /* 
+         * считываем данные 9 раз и добавляем JLabel
+         * для каждого игрока через addPlayerInfo
+         */
         for (int num = 1; num <= 9; num++)
         {
-            player = new BaseballPlayer(hankeesData.nextLine(), hankeesData.nextDouble());
+            player = new PlayerPlus(hankeesData.nextLine(), hankeesData.nextDouble());
             hankeesData.nextLine();
             addPlayerInfo(player);
         }
 
-        setTitle("Average Hankees betting");
-        setLayout(new GridLayout(9, 2, 20, 3));
+        add (new JLabel());
+        add (new JLabel(" ------"));
+        add (new JLabel("Average Hankees team shots per player"));
+        add (new JLabel(PlayerPlus.findTeamAverageString()));
+
+        setTitle("Hankees team shots");
+        setLayout(new GridLayout(11, 2, 20, 3));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         pack();
         setVisible(true);
