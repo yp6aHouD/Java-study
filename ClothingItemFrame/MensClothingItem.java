@@ -1,9 +1,6 @@
-import java.util.Objects;
+package ClothingItemFrame;
 
-enum clothesType
-{
-    BRIDGES, PANTS, T_SHIRT, JACKET, COAT, SHORTS
-};
+import java.util.Objects;
 
 public class MensClothingItem
 {

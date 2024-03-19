@@ -1,5 +1,8 @@
+package ClothingItemFrame;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
 import java.awt.GridLayout;
 
 
