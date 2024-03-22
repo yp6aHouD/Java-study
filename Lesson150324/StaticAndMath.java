@@ -11,6 +11,7 @@ public class StaticAndMath
     int x = 2; // эта переменная меняется внутри экземпляра
     static int y = 3; // эту переменную можно менять между экземплярами
     
+    @SuppressWarnings("static-access")
     public static void main(String[] args)
     {
         StaticAndMath cl = new StaticAndMath();

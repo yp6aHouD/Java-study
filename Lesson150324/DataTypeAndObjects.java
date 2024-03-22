@@ -4,6 +4,7 @@ import static java.lang.System.out;
 public class DataTypeAndObjects
 {
     int z; // 成员变量 переменная класса, равна 0 по умолчанию
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         int z = 314;
