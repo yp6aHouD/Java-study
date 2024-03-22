@@ -15,6 +15,7 @@ public class HomeOfDesign extends MensClothingItem
     private static String color;
     private static DecimalFormat decFormat = new DecimalFormat();
     private static double sumPrice = 0;
+    private static int count = 0;
 
     private double price = 0;
     
@@ -26,17 +27,20 @@ public class HomeOfDesign extends MensClothingItem
     HomeOfDesign(clothesType kind)
     {
         super(kind);
+        count++;
     }
 
     HomeOfDesign(clothesType kind, String name)
     {
         super(kind, name);
+        count++;
     }
     
     HomeOfDesign(clothesType kind, String name, String color)
     {
         super(kind, name);
         HomeOfDesign.color = color;
+        count++;
     }
     
     HomeOfDesign(clothesType kind, String name, double price)
@@ -44,6 +48,7 @@ public class HomeOfDesign extends MensClothingItem
         super(kind, name);
         this.price = price;
         HomeOfDesign.sumPrice += price;
+        count++;
     }
     
     HomeOfDesign(clothesType kind, String name, String color, double price)
@@ -52,6 +57,7 @@ public class HomeOfDesign extends MensClothingItem
         HomeOfDesign.color = color;
         this.price = price;
         HomeOfDesign.sumPrice += price;
+        count++;
     }
     
 
@@ -119,5 +125,10 @@ public class HomeOfDesign extends MensClothingItem
     public static String getSumPriceString()
     {
         return decFormat.format(HomeOfDesign.sumPrice);
+    }
+
+    public void printCount()
+    {
+        System.out.println("Count of clothes in the collection: " + count);
     }
 }

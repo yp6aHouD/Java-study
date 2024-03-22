@@ -66,6 +66,8 @@ public class HomeOfDesignFrame extends JFrame {
         pack();
         setSize(400, 200);
         setVisible(true);
+
+        if (items[0] != null) items[0].printCount(); // печать количества созданных объектов
     }
 
     void addClothingToFrame(HomeOfDesign clothObject) {
