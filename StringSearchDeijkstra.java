@@ -11,7 +11,7 @@ public class StringSearchDeijkstra
     
     static int StringSearching(String sourceStr, String searchStr) {
         if (sourceStr == null || searchStr == null)
-            return 0;
+            return -1;
 
         char[] s = sourceStr.toCharArray();
         char[] p = searchStr.toCharArray();
