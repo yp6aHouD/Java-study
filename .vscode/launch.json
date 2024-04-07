@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DestrAndPodclass",
+            "request": "launch",
+            "mainClass": "Lesson070424.DestrAndPodclass",
+            "projectName": "Java_fcbfd1b6"
+        },
+        {
+            "type": "java",
             "name": "LeetCode_1TwoSum",
             "request": "launch",
             "mainClass": "LeetCode_1TwoSum",

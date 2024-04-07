@@ -11,5 +11,11 @@
   "cSpell.words": ["суперкласс", "суперкласса", "nums"],
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
-  }
+  },
+  "java.project.sourcePaths": [
+    "."
+  ],
+  "java.project.referencedLibraries": [
+    "lib/testng-7.9.0.jar"
+  ]
 }
