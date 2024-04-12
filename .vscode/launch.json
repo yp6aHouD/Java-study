@@ -4,25 +4,13 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "DestrAndPodclass",
-            "request": "launch",
-            "mainClass": "Lesson070424.DestrAndPodclass",
-            "projectName": "Java_fcbfd1b6"
-        },
-        {
-            "type": "java",
-            "name": "LeetCode_1TwoSum",
-            "request": "launch",
-            "mainClass": "LeetCode_1TwoSum",
-            "projectName": "Java_fcbfd1b6"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
+        { 
+            "type": "java", 
+            "name": "Debug (Launch) - Current File",
+            "request": "launch", 
+            "mainClass": "${file}",
+            "projectName": "Java_fcbfd1b6",
+            //"args": [1, 2, 4, "44 55"]
         },
         {
             "type": "java",
@@ -187,6 +175,6 @@
             "request": "launch",
             "mainClass": "Типы_данных",
             "projectName": "Java_fcbfd1b6"
-        }
+        },
     ]
 }
