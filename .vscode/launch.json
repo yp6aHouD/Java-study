@@ -9,7 +9,7 @@
             "name": "Debug (Launch) - Current File",
             "request": "launch", 
             "mainClass": "${file}",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             //"args": [1, 2, 4, "44 55"]
         },
         {
@@ -17,14 +17,14 @@
             "name": "Class_is_a_struct",
             "request": "launch",
             "mainClass": "Class_is_a_struct",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "DoPayroll",
             "request": "launch",
             "mainClass": "DoPayroll",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -34,7 +34,7 @@
             "name": "Fibonacci_recursive",
             "request": "launch",
             "mainClass": "Fibonacci_recursive",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -44,7 +44,7 @@
             "name": "Guess_game",
             "request": "launch",
             "mainClass": "Guess_game",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -54,7 +54,7 @@
             "name": "Guess_game_while",
             "request": "launch",
             "mainClass": "Guess_game_while",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -64,7 +64,7 @@
             "name": "Main_file",
             "request": "launch",
             "mainClass": "Main_file",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -74,7 +74,7 @@
             "name": "Months_days_switch",
             "request": "launch",
             "mainClass": "Months_days_switch",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -84,7 +84,7 @@
             "name": "Password_input",
             "request": "launch",
             "mainClass": "Password_input",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -94,7 +94,7 @@
             "name": "calc_dummies_frame",
             "request": "launch",
             "mainClass": "calc_dummies_frame",
-            "projectName": "Java_fcbfd1b6",
+            "projectName": "Java",
             "args": [
                 "-Duser.language=cn -Duser.country=CN"
             ]
@@ -104,77 +104,77 @@
             "name": "class_as_combination_of_methods_and_fields",
             "request": "launch",
             "mainClass": "class_as_combination_of_methods_and_fields",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "do_while",
             "request": "launch",
             "mainClass": "do_while",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "guess_dummies_frame",
             "request": "launch",
             "mainClass": "guess_dummies_frame",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "if_else_auth",
             "request": "launch",
             "mainClass": "if_else_auth",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "login_password_JOptionPane",
             "request": "launch",
             "mainClass": "login_password_JOptionPane",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "print_accont_fummies_frame",
             "request": "launch",
             "mainClass": "print_accont_fummies_frame",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "switch_case",
             "request": "launch",
             "mainClass": "switch_case",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "use_Account",
             "request": "launch",
             "mainClass": "use_Account",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "use_Organization",
             "request": "launch",
             "mainClass": "use_Organization",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "use_dummies_frame",
             "request": "launch",
             "mainClass": "use_dummies_frame",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
         {
             "type": "java",
             "name": "Типы_данных",
             "request": "launch",
             "mainClass": "Типы_данных",
-            "projectName": "Java_fcbfd1b6"
+            "projectName": "Java"
         },
     ]
 }
