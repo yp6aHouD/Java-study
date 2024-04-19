@@ -4,13 +4,19 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        { 
-            "type": "java", 
+        {
+            "type": "java",
+            "name": "Compatibility",
+            "request": "launch",
+            "mainClass": "Lesson190424.Compatibility",
+            "projectName": "Java_fcbfd1b6"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
-            "request": "launch", 
+            "request": "launch",
             "mainClass": "${file}",
-            "projectName": "Java",
-            //"args": [1, 2, 4, "44 55"]
+            "projectName": "Java"
         },
         {
             "type": "java",
@@ -175,6 +181,6 @@
             "request": "launch",
             "mainClass": "Типы_данных",
             "projectName": "Java"
-        },
+        }
     ]
 }
