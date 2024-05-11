@@ -37,6 +37,7 @@ class MyFrame3 implements ActionListener
         btn3.addActionListener(this);
         
         s = new Label("" + numC);
+        s.setSize(100, 50);
         
         f.setLayout(new FlowLayout(FlowLayout.LEFT)); // установка расположения кнопок
         f.setBackground(Color.CYAN);
@@ -60,6 +61,7 @@ class MyFrame3 implements ActionListener
     {                                          // (e - это объект, который вызвал событие)
         if (e.getSource() == btn1) 
         {
+            numC++;
             s.setText("" + numC);
         }
         else if (e.getSource() == btn2) 
