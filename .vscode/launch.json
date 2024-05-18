@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NOTEPAD",
+            "request": "launch",
+            "mainClass": "NotepadChenGuang.GUI"
+        },
+        {
+            "type": "java",
             "name": "Compatibility",
             "request": "launch",
             "mainClass": "Lesson190424.Compatibility",

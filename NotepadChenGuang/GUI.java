@@ -1,11 +1,9 @@
 package NotepadChenGuang;
 
-import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BorderFactory;
-import javax.swing.JComboBox;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -18,25 +16,21 @@ public class GUI implements ActionListener
 {
     // Popup message
     PopupMessage popupMessage;
+    JButton resetText = new JButton("Reset text settings");
     JFrame window;
     // TextArea
     JTextPane textArea;
     JScrollPane scrollPane;
     // Top Menu Bar
     JMenuBar menuBar;
-    JMenu fileMenu, editMenu, formatMenu, viewMenu;
+    JMenu fileMenu, editMenu, formatMenu;
     JMenuItem fNew, fOpen, fSave, fSaveAs, fExit,
     eCut, eCopy, ePaste, eFind,
-    fFontAndSize,
-    vBackgroundColor, vZoomIn, vZoomOut;
+    fFontAndSize, fTextColor, fTextHighlightColor,fBackgroundColor;
 
     FileFunction fileFunction = new FileFunction(this);
     FormatFunction formatFunction = new FormatFunction(this);
 
-    
-    String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
-    // Создание выпадающего списка с шрифтами
-    JComboBox<String> fontList = new JComboBox<>(fonts);
 
     public GUI()
     {
@@ -44,6 +38,7 @@ public class GUI implements ActionListener
         createTextPane();
         createMenuBar();
         createFileMenu();
+        createEditMenu();
         createFormatMenu();
         
         window.setVisible(true);
@@ -71,38 +66,22 @@ public class GUI implements ActionListener
     public void createMenuBar()
     {
         menuBar = new JMenuBar();
-        fileMenu = new JMenu("File");
 
+        fileMenu = new JMenu("File");
         editMenu = new JMenu("Edit");
-        eCut = new JMenuItem("Cut");
-        eCopy = new JMenuItem("Copy");
-        ePaste = new JMenuItem("Paste");
-        eFind = new JMenuItem("Find");
+       
 
         formatMenu = new JMenu("Format");
-
-        viewMenu = new JMenu("View");
-        vBackgroundColor = new JMenuItem("Background color");
-        vZoomIn = new JMenuItem("Zoom in");
-        vZoomOut = new JMenuItem("Zoom out");
 
         menuBar.add(fileMenu);
 
         menuBar.add(editMenu);
-        editMenu.add(eCut);
-        editMenu.add(eCopy);
-        editMenu.add(ePaste);
-        editMenu.addSeparator();
-        editMenu.add(eFind);
 
         menuBar.add(formatMenu);
         
-        menuBar.add(viewMenu);
-        viewMenu.add(vZoomIn);
-        viewMenu.add(vZoomOut);
-        viewMenu.addSeparator();
-        viewMenu.add(vBackgroundColor);
-
+        menuBar.add(resetText);
+        resetText.addActionListener(this);
+        resetText.setActionCommand("Reset");
 
         this.menuBar.setBorder(BorderFactory.createEmptyBorder());
         window.setJMenuBar(menuBar);
@@ -138,12 +117,52 @@ public class GUI implements ActionListener
 
     }
 
+    public void createEditMenu()
+    {
+        eCut = new JMenuItem("Cut");
+        eCut.addActionListener(this);
+        eCut.setActionCommand("Cut");
+        editMenu.add(eCut);
+        
+        eCopy = new JMenuItem("Copy");
+        eCopy.addActionListener(this);
+        eCopy.setActionCommand("Copy");
+        editMenu.add(eCopy);
+        
+        ePaste = new JMenuItem("Paste");
+        ePaste.addActionListener(this);
+        ePaste.setActionCommand("Paste");
+        editMenu.add(ePaste);
+        editMenu.addSeparator();
+
+        eFind = new JMenuItem("Find");
+        eFind.addActionListener(this);
+        eFind.setActionCommand("Find");
+        editMenu.add(eFind);
+    }
+
     public void createFormatMenu()
     {
         fFontAndSize = new JMenuItem("Font and size");
         fFontAndSize.addActionListener(this);
         fFontAndSize.setActionCommand("FontAndSize");
-        formatMenu.add(fFontAndSize);      
+        formatMenu.add(fFontAndSize);     
+        
+        fTextColor = new JMenuItem("Text color");
+        fTextColor.addActionListener(this);
+        fTextColor.setActionCommand("SetTextColor");
+        formatMenu.add(fTextColor);
+
+        fTextHighlightColor = new JMenuItem("Highlight text");
+        fTextHighlightColor.addActionListener(this);
+        fTextHighlightColor.setActionCommand("SetTextHighlight");
+        formatMenu.add(fTextHighlightColor);
+        formatMenu.addSeparator();
+
+        fBackgroundColor = new JMenuItem("Background color");
+        fBackgroundColor.addActionListener(this);
+        fBackgroundColor.setActionCommand("SetBackground");
+        formatMenu.add(fBackgroundColor);
     }
 
     @Override
@@ -165,6 +184,15 @@ public class GUI implements ActionListener
                 fileFunction.exit(); break;
             case "FontAndSize":
                 formatFunction.setTextFontAndSize(); break;
+            case "SetTextColor":
+                formatFunction.setTextColor(true); break;
+            case "SetTextHighlight":
+                formatFunction.setTextColor(false); break;
+            case "SetBackground":
+                formatFunction.setBackgroundColor(); break;
+            case "Reset":
+                formatFunction.resetText(); break;
+            
         }
     }
 
