@@ -25,6 +25,7 @@ public class FormatFunction
         this.gui = gui;
     }
 
+
     //установка шрифта и размера
     public void setTextFontAndSize() 
     {
@@ -71,6 +72,7 @@ public class FormatFunction
             // Применение стиля к выделенному тексту
             doc.setCharacterAttributes(start, end - start, style, false);
         } 
+
         else 
         {
             // Получение StyledDocument
@@ -88,6 +90,7 @@ public class FormatFunction
             gui.textArea.setFont(font); */
         }
     }
+
 
     // Изменение цвета текста и выделение текста цветом
     public void setTextColor(boolean isTextColor)
@@ -122,7 +125,6 @@ public class FormatFunction
                     doc.setCharacterAttributes(start, end - start, style, false);
                 }
             }
-            else return;
         }
         
         // если никакая часть текста не была выделена
@@ -140,6 +142,7 @@ public class FormatFunction
                     // Установка атрибутов абзаца, начиная с позиции каретки и до конца документа
                     doc.setParagraphAttributes(caret, doc.getLength() - caret, style, false);
                 }
+
                 else
                 {
                     style = doc.addStyle("newStyle", null);
@@ -168,16 +171,22 @@ public class FormatFunction
         }
     }
 
+    // reset цвета текста и фона текста
     public void resetText()
     {
         int caret = gui.textArea.getCaretPosition();
         doc = gui.textArea.getStyledDocument();
+
         // Сброс цвета текста на значение по умолчанию
         StyleConstants.setForeground(style, Color.BLACK);
-        doc.setCharacterAttributes(caret, doc.getLength() - caret, style, false);
+        doc.setParagraphAttributes(caret, doc.getLength() - caret, style, false);
 
         // Сброс цвета фона на значение по умолчанию
-        StyleConstants.setBackground(style, Color.WHITE);
-        doc.setCharacterAttributes(caret, doc.getLength() - caret, style, false);
+        MutableAttributeSet attrs = new SimpleAttributeSet();
+        StyleConstants.setBackground(attrs, gui.textArea.getBackground());
+
+        gui.textArea.setCharacterAttributes(attrs, true);
+        StyleConstants.setBackground(style, gui.textArea.getBackground());
+        doc.setParagraphAttributes(caret, doc.getLength() - caret, style, false);
     }
 }
